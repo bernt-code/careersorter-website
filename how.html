@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Shortlist Works | Careersorter</title>
+    <meta name="description" content="From messy CV to matched candidate. See how Shortlist connects verified students with recruiters.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep': '#0d1117',
+                        'surface': '#161b22',
+                        'accent': '#00d68f',
+                        'accent-blue': '#00b4d8',
+                        'muted': '#8b949e',
+                    },
+                    fontFamily: {
+                        'display': ['Outfit', 'sans-serif'],
+                        'mono': ['IBM Plex Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background: #0d1117; }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #00d68f 0%, #00b4d8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card {
+            background: #161b22;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        
+        .sauce {
+            background: linear-gradient(135deg, rgba(0, 214, 143, 0.1) 0%, rgba(0, 180, 216, 0.05) 100%);
+            border: 1px solid rgba(0, 214, 143, 0.25);
+        }
+        
+        .step-dot {
+            background: linear-gradient(135deg, #00d68f 0%, #00b4d8 100%);
+        }
+        
+        .powered-badge {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body class="font-display text-white">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-deep/90 backdrop-blur-sm border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="font-bold text-lg text-white">Shortlist</span>
+                <span class="text-muted text-sm">by Careersorter</span>
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="text-sm text-muted hover:text-white transition">Home</a>
+                <a href="#start" class="text-sm text-deep bg-accent px-5 py-2 rounded-full font-medium hover:bg-white transition">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="font-mono text-xs text-accent tracking-widest mb-4 uppercase">How Shortlist Works</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                From Messy CV to<br><span class="gradient-text">Matched Candidate</span>
+            </h1>
+            <p class="text-lg text-muted max-w-2xl mx-auto">
+                Five steps. Multiple layers of intelligence. One outcome: your verified students connected directly with recruiters who need them.
+            </p>
+        </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="py-16 px-6">
+        <div class="max-w-4xl mx-auto space-y-8">
+
+            <!-- Step 1 -->
+            <div class="card rounded-2xl p-8">
+                <div class="flex items-start gap-6">
+                    <div class="step-dot w-12 h-12 rounded-full flex items-center justify-center text-deep font-bold text-lg shrink-0">1</div>
+                    <div class="flex-1">
+                        <h2 class="text-2xl font-bold mb-3">Design School Template</h2>
+                        <p class="text-muted mb-6 leading-relaxed">
+                            We work with your careers team to create CV templates customised to your institutional branding. Your logo, your colours, your standards — applied consistently across every student.
+                        </p>
+                        <div class="sauce rounded-xl p-5">
+                            <p class="font-mono text-xs text-accent tracking-widest mb-3 uppercase flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path></svg>
+                                Secret Sauce
+                            </p>
+                            <p class="text-white text-sm leading-relaxed">
+                                <strong>ATS-proof formatting.</strong> No tables, no text boxes, no images that break parsers. Tested against every major Applicant Tracking System. Your students' CVs won't get rejected because of formatting.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="card rounded-2xl p-8">
+                <div class="flex items-start gap-6">
+                    <div class="step-dot w-12 h-12 rounded-full flex items-center justify-center text-deep font-bold text-lg shrink-0">2</div>
+                    <div class="flex-1">
+                        <h2 class="text-2xl font-bold mb-3">Send to Students</h2>
+                        <p class="text-muted mb-6 leading-relaxed">
+                            Students receive access to Shortlist. They upload their existing CV — any format, any mess, any language. Word docs, PDFs, even LinkedIn exports.
+                        </p>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="bg-white/5 rounded-lg p-4">
+                                <p class="font-semibold text-sm mb-1">Self-service</p>
+                                <p class="text-muted text-sm">Students work independently. Great for large cohorts.</p>
+                            </div>
+                            <div class="bg-white/5 rounded-lg p-4">
+                                <p class="font-semibold text-sm mb-1">CV Clinic Sessions</p>
+                                <p class="text-muted text-sm">Live editing with coaches. Up to 500 students at once.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="card rounded-2xl p-8">
+                <div class="flex items-start gap-6">
+                    <div class="step-dot w-12 h-12 rounded-full flex items-center justify-center text-deep font-bold text-lg shrink-0">3</div>
+                    <div class="flex-1">
+                        <div class="flex items-start justify-between mb-3">
+                            <h2 class="text-2xl font-bold">Convert & Structure</h2>
+                            <a href="https://allsorter.com" target="_blank" class="powered-badge rounded-full px-3 py-1 text-xs text-muted hover:text-white transition flex items-center gap-1.5">
+                                <span>Powered by</span>
+                                <span class="text-white font-medium">Allsorter</span>
+                            </a>
+                        </div>
+                        <p class="text-muted mb-6 leading-relaxed">
+                            AI extracts all content from the uploaded CV. Guided prompts help students fill gaps. The system organises everything into your school-branded template automatically.
+                        </p>
+                        <div class="sauce rounded-xl p-5">
+                            <p class="font-mono text-xs text-accent tracking-widest mb-3 uppercase flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path></svg>
+                                Secret Sauce
+                            </p>
+                            <p class="text-white text-sm leading-relaxed">
+                                <strong>AI content tuning.</strong> The system doesn't just format — it improves. Skills extraction finds competencies students forgot to mention. Content suggestions help them articulate experience better. 36 languages supported.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="card rounded-2xl p-8">
+                <div class="flex items-start gap-6">
+                    <div class="step-dot w-12 h-12 rounded-full flex items-center justify-center text-deep font-bold text-lg shrink-0">4</div>
+                    <div class="flex-1">
+                        <h2 class="text-2xl font-bold mb-3">Upload to Talent Pool</h2>
+                        <p class="text-muted mb-6 leading-relaxed">
+                            Your careers team reviews CVs, gives feedback, approves. Approved CVs enter your institution's searchable talent pool.
+                        </p>
+                        <div class="sauce rounded-xl p-5">
+                            <p class="font-mono text-xs text-accent tracking-widest mb-3 uppercase flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path></svg>
+                                Secret Sauce
+                            </p>
+                            <p class="text-white text-sm leading-relaxed">
+                                <strong>AI competency extraction.</strong> Each CV is analysed by AI that understands meaning. "10 years competitive sailing" becomes resilience, leadership, risk assessment. Every CV becomes a semantic embedding — searchable by what the person <em>can do</em>, not just keywords they used.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="card rounded-2xl p-8">
+                <div class="flex items-start gap-6">
+                    <div class="step-dot w-12 h-12 rounded-full flex items-center justify-center text-deep font-bold text-lg shrink-0">5</div>
+                    <div class="flex-1">
+                        <h2 class="text-2xl font-bold mb-3">Connect to Recruiter</h2>
+                        <p class="text-muted mb-6 leading-relaxed">
+                            Recruiters access your talent pool. They describe what they need in natural language — "analytical thinker with cross-cultural experience" — and Shortlist finds matches by meaning.
+                        </p>
+                        <div class="sauce rounded-xl p-5">
+                            <p class="font-mono text-xs text-accent tracking-widest mb-3 uppercase flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path></svg>
+                                Secret Sauce
+                            </p>
+                            <p class="text-white text-sm leading-relaxed mb-4">
+                                <strong>Semantic search + direct contact.</strong> No keyword matching that misses "strategy" because the CV says "strategic". No application forms. No ATS delays. Recruiter finds candidate, reaches out directly. You track what happens.
+                            </p>
+                            <div class="grid sm:grid-cols-3 gap-3 text-center">
+                                <div class="bg-deep rounded-lg p-3">
+                                    <p class="text-accent font-bold">Verified</p>
+                                    <p class="text-muted text-xs">University vouches</p>
+                                </div>
+                                <div class="bg-deep rounded-lg p-3">
+                                    <p class="text-accent font-bold">Direct</p>
+                                    <p class="text-muted text-xs">No middleman</p>
+                                </div>
+                                <div class="bg-deep rounded-lg p-3">
+                                    <p class="text-accent font-bold">Tracked</p>
+                                    <p class="text-muted text-xs">Prove outcomes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- The Result -->
+    <section class="py-20 px-6 bg-surface/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">The Result</h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div>
+                    <p class="text-4xl font-bold gradient-text mb-2">Students</p>
+                    <p class="text-muted">Upload once. Get discovered. Back to studying.</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold gradient-text mb-2">Recruiters</p>
+                    <p class="text-muted">Verified candidates. Semantic search. Direct contact.</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold gradient-text mb-2">Your Team</p>
+                    <p class="text-muted">Scale without compromise. Track what works.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="start" class="py-20 px-6">
+        <div class="max-w-xl mx-auto text-center">
+            <div class="card rounded-2xl p-10">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to see it in action?</h2>
+                <p class="text-muted mb-8">We'll walk you through the complete pipeline with your branding.</p>
+                <a href="mailto:info@careersorter.co?subject=Shortlist%20Demo%20Request" class="inline-flex items-center gap-2 bg-accent text-deep px-8 py-4 rounded-full font-semibold hover:bg-white transition">
+                    Request a Demo
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust -->
+    <section class="py-12 px-6 border-t border-white/5">
+        <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-8 text-sm text-muted">
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                ISO 27001 Certified
+            </div>
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                GDPR Compliant
+            </div>
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                Data never used for AI training
+            </div>
+            <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                36 Languages
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-10 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted">
+            <div class="flex items-center gap-2">
+                <span class="text-white font-medium">Shortlist</span>
+                <span>by Careersorter</span>
+                <span class="text-white/20 mx-2">|</span>
+                <span>CV technology powered by <a href="https://allsorter.com" target="_blank" class="text-accent hover:text-white transition">Allsorter</a></span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="hover:text-accent transition">Home</a>
+                <a href="mailto:info@careersorter.co" class="hover:text-accent transition">info@careersorter.co</a>
+                <a href="https://www.linkedin.com/company/careersorter-co/" class="hover:text-accent transition" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
