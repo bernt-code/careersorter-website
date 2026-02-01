@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careersorter — Connect Verified Students with Recruiters</title>
+    <meta name="description" content="The old system is broken. ShortlistMe connects verified students directly with recruiters. Build CV. Create Talent Pool. Connect.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep': '#0d1117',
+                        'surface': '#161b22',
+                        'accent': '#00d68f',
+                        'accent-dim': 'rgba(0, 214, 143, 0.15)',
+                        'muted': '#8b949e',
+                        'broken': '#ff6b6b',
+                    },
+                    fontFamily: {
+                        'display': ['Outfit', 'sans-serif'],
+                        'mono': ['IBM Plex Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background: #0d1117; }
+        
+        .glow-soft {
+            text-shadow: 0 0 40px rgba(0, 214, 143, 0.4);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #00d68f 0%, #00b4d8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .badge {
+            background: rgba(0, 214, 143, 0.1);
+            border: 1px solid rgba(0, 214, 143, 0.2);
+        }
+        
+        .card {
+            background: #161b22;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .card:hover {
+            border-color: rgba(0, 214, 143, 0.3);
+        }
+        
+        .broken-text {
+            color: #ff6b6b;
+        }
+        
+        .fixed-text {
+            color: #00d68f;
+        }
+    </style>
+</head>
+<body class="font-display text-white antialiased">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-deep/80 border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="font-bold text-lg text-white">ShortlistMe</span>
+                <span class="text-muted text-sm">by Careersorter</span>
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="how.html" class="text-sm text-muted hover:text-white transition hidden md:block">How it works</a>
+                <a href="#access" class="text-sm text-deep bg-accent px-5 py-2 rounded-full font-medium hover:bg-white transition">Get Access</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center justify-center px-6 pt-16">
+        <div class="text-center max-w-4xl">
+            <div class="badge inline-block px-4 py-1.5 rounded-full font-mono text-xs text-accent tracking-wide mb-8">
+                For university careers teams
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                The old system is broken.<br>
+                <span class="gradient-text glow-soft">ShortlistMe is here.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-muted max-w-2xl mx-auto mb-10">
+                Connect your verified students directly with recruiters. No applications. No black holes. No wasted time.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#access" class="bg-accent text-deep px-8 py-3 rounded-full font-semibold hover:bg-white transition">
+                    Request Access
+                </a>
+                <a href="how.html" class="text-muted hover:text-white transition font-medium">
+                    See how it works →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem -->
+    <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Recruitment is <span class="broken-text">broken</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Broken -->
+                <div class="space-y-6">
+                    <div class="card rounded-xl p-6 transition">
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">❌</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2 broken-text">Students spray applications</h3>
+                                <p class="text-muted">Hundreds of applications into black holes. No response. No feedback. Just silence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-xl p-6 transition">
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">❌</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2 broken-text">Recruiters drown in AI slop</h3>
+                                <p class="text-muted">ChatGPT applications flood inboxes. Real talent gets lost in the noise.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-xl p-6 transition">
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">❌</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2 broken-text">Keywords miss candidates</h3>
+                                <p class="text-muted">ATS systems filter on keywords. Great candidates rejected for wrong words.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-xl p-6 transition">
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">❌</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2 broken-text">Schools can't prove outcomes</h3>
+                                <p class="text-muted">Advice given. Placements untracked. No data for accreditation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fixed -->
+                <div class="space-y-6">
+                    <div class="card rounded-xl p-6 transition">
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">✅</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2 fixed-text">Students upload once, get discovered</h3>
+                                <p class="text-muted">One CV. Verified by your institution. Recruiters come to them.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-xl p-6 transition">
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">✅</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2 fixed-text">Recruiters search verified talent</h3>
+                                <p class="text-muted">Institution-backed candidates. Real qualifications. No AI-generated noise.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-xl p-6 transition">
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">✅</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2 fixed-text">Semantic search finds meaning</h3>
+                                <p class="text-muted">Search by skills and experience, not keywords. Find who you need.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-xl p-6 transition">
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">✅</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2 fixed-text">Track every match</h3>
+                                <p class="text-muted">See who's searching, who's contacting, who's hiring. Real data.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Preview -->
+    <section class="py-24 px-6 bg-surface/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Three steps. That's it.
+            </h2>
+            <p class="text-muted text-lg mb-12">
+                Build. Pool. Connect.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card rounded-xl p-8">
+                    <div class="text-4xl mb-4">📄</div>
+                    <h3 class="font-semibold text-lg mb-2">1. Build CV</h3>
+                    <p class="text-muted text-sm">Student creates CV in Careersorter. Consistent format. AI-readable.</p>
+                </div>
+                <div class="card rounded-xl p-8">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="font-semibold text-lg mb-2">2. Create Talent Pool</h3>
+                    <p class="text-muted text-sm">Careers team approves. CV enters ShortlistMe. Verified and searchable.</p>
+                </div>
+                <div class="card rounded-xl p-8">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="font-semibold text-lg mb-2">3. Connect</h3>
+                    <p class="text-muted text-sm">Recruiters search by meaning. Find matches. Contact directly.</p>
+                </div>
+            </div>
+            <a href="how.html" class="inline-block mt-10 text-accent hover:text-white transition font-medium">
+                See detailed breakdown →
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="access" class="py-24 px-6">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Ready to make placements happen?
+            </h2>
+            <p class="text-muted text-lg mb-10">
+                Stop giving advice. Start making matches.
+            </p>
+            <a href="mailto:info@careersorter.co?subject=ShortlistMe Demo Request" class="inline-block bg-accent text-deep px-10 py-4 rounded-full font-semibold text-lg hover:bg-white transition">
+                Request a Demo
+            </a>
+        </div>
+    </section>
+
+    <!-- Trust -->
+    <section class="py-16 px-6 border-t border-white/5">
+        <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-8 text-sm text-muted">
+            <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                ISO 27001 Certified
+            </div>
+            <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                GDPR Compliant
+            </div>
+            <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                36 Languages
+            </div>
+            <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                Data never used for AI training
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-10 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted">
+            <div class="flex items-center gap-2">
+                <span class="text-white font-medium">ShortlistMe</span>
+                <span>by Careersorter</span>
+                <span class="text-white/20 mx-2">|</span>
+                <span>CV technology powered by <a href="https://allsorter.com" target="_blank" class="text-accent hover:text-white transition">Allsorter</a></span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="how.html" class="hover:text-accent transition">How it works</a>
+                <a href="mailto:info@careersorter.co" class="hover:text-accent transition">info@careersorter.co</a>
+                <a href="https://www.linkedin.com/company/careersorter-co/" class="hover:text-accent transition" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
